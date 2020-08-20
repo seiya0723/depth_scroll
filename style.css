@@ -1,0 +1,45 @@
+body, html, main {
+    /* important */
+    height: 100%;
+}
+ 
+/* 画像を表示する背景 */
+.fixed_bg {
+    min-height: 100%;
+
+    /* 画面いっぱいに画像を拡大表示させる */
+    background-size: cover;
+
+    /* fixed指定をして、奥行きを感じさせる */
+    background-attachment: fixed;
+
+    /* no-repeatで小さい画像を敷き詰めない */
+    background-repeat: no-repeat;
+
+    /* 背景の配置はXY共に中央揃え */
+    background-position: center center;
+}
+
+
+/* 【注意】画像パスが変化するWEBアプリケーションフレームワークなどでは、cssに指定するのではなく、各要素のstyle属性へ、テンプレート変数を記入すること
+ * */ 
+.fixed_bg.bg_1 {
+  background-image: url("img/1.jpg");
+}
+.fixed_bg.bg_2 {
+  background-image: url("img/2.jpg");
+}
+.fixed_bg.bg_3 {
+  background-image: url("img/3.jpg");
+}
+.fixed_bg.bg_4 {
+  background-image: url("img/4.jpg");
+}
+ 
+
+.scroll_bg {
+    min-height: 100%;
+}
+h1 {
+    color:white;
+}
